@@ -38,7 +38,7 @@ These parameters collectively define the performance, efficiency, and behavior o
 
 
 Given specs:
-
+4-5s
 Parameter	          :  Model
 Motor	              :  Turnigy Aerodrive SK3 -4240-740kv
 Poles	              :  14
