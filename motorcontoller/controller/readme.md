@@ -8,14 +8,20 @@ When designing a BLDC motor controller, engineers can use different current swit
 
 The trapezoidal commutation allows two windings out of three to stay energized simultaneously. In the sinusoidal approach, the phase shift complies with the law of sines, so current switching between the phases becomes smoother. 
 
-SPI between hall and mcu
+((Cant do SPI as D10,D11 PWM) between hall and mcu use I2C
 
-https://ams.com/documents/20143/36005/AS5147_DS000307_3-00.pdf
+https://ams.com/documents/20143/36005/AS5147_DS000307_3-00.pdf)
+
+Use other Mag encoder
+ams AS5048B
 
 magnetic encoder, no moving parts
 
 - 0.02197 deg resolution
 - 14 bit resolution
+
+-In applications where a sensored FOC scheme is preferred, Infineon’s XENSIV™ TLE5012 magnetic angle sensors with 0.01° resolution can be used 
+for precise positioning. (SPI)
 
 
 Compare with 
@@ -39,6 +45,9 @@ We can use 200kHz similar switching loses
 60% reduction in ripple currrent
 
 https://www.controleng.com/articles/understanding-the-effect-of-pwm-when-controlling-a-brushless-dc-motor/
+
+![alt text](image-35.png)
+![alt text](image-34.png)
 
 Maerz, Martin & Heckel, Thomas & Rettner, Cornelius. (2015). Fundamental Efficiency Limits in Power Electronic Systems. 10.1109/INTLEC.2015.7572399. 
 
@@ -69,6 +78,10 @@ GaN driver-
 ![alt text](image-13.png)
 ![alt text](image-12.png)
 
+![alt text](image-33.png)
+
+![alt text](image-37.png)
+
 Turn on, off  propagation delay= 75ns
 impulse blanking time = 40ns(min time pulse on)
 
@@ -85,7 +98,9 @@ unoR4 minima: 48Mhz
 ~8 bit resolution -> 200kHz (240)
 voltage control resolution= 0.234375V @60V and 0.15625V @ 40V
 PI or PID
-
+PWM: D3,D5,D6,D9,D10,D11
+Analog: A0,A1,A2,A3,A4,A5 (Temp, Vref)
+Can use Analog Mux: TMUX6211  4channel
 
 STM32G491RE ARM Microcontroller 170MHz 850(more than 9 bits accuracy)
 ![alt text](image-5.png)
@@ -99,6 +114,9 @@ https://www.infineon.com/cms/en/product/microcontroller/32-bit-industrial-microc
 (recommended for GaN and gate driver)
 ![alt text](image-20.png)
 ![alt text](image-19.png)
+
+The control was implemented using an XMC4400 drive card, using sensorless field-oriented control (FOC) firmware with a maximum switching frequency of 100 kHz and a control loop update rate of 
+20 kHz. Increasing the control frequency to match the switching frequency at 100 kHz would enable even higher control bandwidth for applications that benefit from an extremely fast dynamic control response.
 
 or AURIX 
 https://www.infineon.com/cms/en/product/microcontroller/32-bit-tricore-microcontroller/
@@ -169,3 +187,17 @@ theory:
 ![alt text](image-31.png)
 ![alt text](image-32.png)
 https://www.youtube.com/watch?v=_6-_jvZe7iA
+
+for buck convertor: 7V, can use LM5117
+
+Current sensor:
+The XENSIV™ TLI4971 Hall effect sensor avoids potential common-mode transient immunity (CMTI) issues with differential amplifiers. A well-isolated in-phase 
+current sensor is more immune to voltage transients and provides accurate readings for field-oriented control of the motor. 
+
+temp sens: TMP236 ±2.0°C analog output temperature sensor, with 19.5mV/°C gain
+
+current sensor: TLI4971
+
+![alt text](image-36.png)
+
+![alt text](image-38.png)
