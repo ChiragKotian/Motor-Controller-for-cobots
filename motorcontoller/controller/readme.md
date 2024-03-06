@@ -100,7 +100,8 @@ voltage control resolution= 0.234375V @60V and 0.15625V @ 40V
 PI or PID
 PWM: D3,D5,D6,D9,D10,D11
 Analog: A0,A1,A2,A3,A4,A5 (Temp, Vref)
-Can use Analog Mux: TMUX6211  4channel
+OverCurr: D2,D4,D7
+Can use Analog Mux: SN74HC4851  8channel (D8,D12,D13)
 
 STM32G491RE ARM Microcontroller 170MHz 850(more than 9 bits accuracy)
 ![alt text](image-5.png)
