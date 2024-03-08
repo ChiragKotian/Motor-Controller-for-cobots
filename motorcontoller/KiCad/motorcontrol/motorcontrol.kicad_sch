@@ -4025,7 +4025,7 @@
   (symbol (lib_id "Device:R") (at 198.12 50.8 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 37448635-356d-48b6-9716-4e36345bf1b6)
-    (property "Reference" "R15" (at 194.31 52.07 0)
+    (property "Reference" "R15" (at 193.04 52.07 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "R" (at 194.31 54.61 0)
