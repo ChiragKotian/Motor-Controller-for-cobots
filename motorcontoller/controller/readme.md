@@ -201,8 +201,12 @@ current sensor: TLI4971
 
 ![alt text](image-36.png)
 
-![alt text](image-38.png)
 
+
+Schematic:
+
+![alt text](motorcontrol-1.png)
 
 BOM:
+
 ![alt text](image-39.png)
