@@ -286,14 +286,14 @@
         )
       )
     )
-    (symbol "Diode:1N4001" (pin_numbers hide) (pin_names hide) (in_bom yes) (on_board yes)
+    (symbol "Diode:1N4007" (pin_numbers hide) (pin_names hide) (in_bom yes) (on_board yes)
       (property "Reference" "D" (at 0 2.54 0)
         (effects (font (size 1.27 1.27)))
       )
-      (property "Value" "1N4001" (at 0 -2.54 0)
+      (property "Value" "1N4007" (at 0 -2.54 0)
         (effects (font (size 1.27 1.27)))
       )
-      (property "Footprint" "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" (at 0 0 0)
+      (property "Footprint" "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" (at 0 -4.445 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (property "Datasheet" "http://www.vishay.com/docs/88503/1n4001.pdf" (at 0 0 0)
@@ -308,13 +308,13 @@
       (property "ki_keywords" "diode" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_description" "50V 1A General Purpose Rectifier Diode, DO-41" (at 0 0 0)
+      (property "ki_description" "1000V 1A General Purpose Rectifier Diode, DO-41" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (property "ki_fp_filters" "D*DO?41*" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (symbol "1N4001_0_1"
+      (symbol "1N4007_0_1"
         (polyline
           (pts
             (xy -1.27 1.27)
@@ -342,7 +342,7 @@
           (fill (type none))
         )
       )
-      (symbol "1N4001_1_1"
+      (symbol "1N4007_1_1"
         (pin passive line (at -3.81 0 0) (length 2.54)
           (name "K" (effects (font (size 1.27 1.27))))
           (number "1" (effects (font (size 1.27 1.27))))
@@ -3150,7 +3150,7 @@
     (property "Value" "TMP236AQDBZTQ1" (at 58.42 119.38 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "SOT95P237X112-3N" (at 76.2 206.68 0)
+    (property "Footprint" "SamacSys_Parts:SOT95P237X112-3N" (at 76.2 206.68 0)
       (effects (font (size 1.27 1.27)) (justify left top) hide)
     )
     (property "Datasheet" "https://www.ti.com/lit/ds/symlink/tmp235-q1.pdf?HQS=dis-dk-null-digikeymode-dsf-pf-null-wwe&ts=1622811540803&ref_url=https%253A%252F%252Fwww.digikey.in%252F" (at 76.2 306.68 0)
@@ -3183,16 +3183,16 @@
     )
   )
 
-  (symbol (lib_id "Diode:1N4001") (at 200.66 68.58 270) (unit 1)
+  (symbol (lib_id "Diode:1N4007") (at 200.66 68.58 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 03e832b9-37b3-4868-a7d9-36fc20fab0b8)
-    (property "Reference" "D3" (at 203.2 67.31 90)
+    (property "Reference" "D?" (at 203.2 67.31 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "1N4001" (at 203.2 69.85 90)
+    (property "Value" "1N4007" (at 203.2 69.85 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" (at 200.66 68.58 0)
+    (property "Footprint" "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" (at 196.215 68.58 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "http://www.vishay.com/docs/88503/1n4001.pdf" (at 200.66 68.58 0)
@@ -3209,7 +3209,7 @@
     (instances
       (project "motorcontrol"
         (path "/c95f7a6e-f487-49bd-bdde-185289dd6bb7"
-          (reference "D3") (unit 1)
+          (reference "D?") (unit 1)
         )
       )
     )
@@ -3218,7 +3218,7 @@
   (symbol (lib_id "Device:R") (at 269.24 114.3 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 066bf0da-1a63-4bfa-b5be-5ebcda29b1b1)
-    (property "Reference" "R20" (at 270.51 113.03 0)
+    (property "Reference" "R28" (at 270.51 113.03 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1 k" (at 270.51 115.57 0)
@@ -3235,7 +3235,7 @@
     (instances
       (project "motorcontrol"
         (path "/c95f7a6e-f487-49bd-bdde-185289dd6bb7"
-          (reference "R20") (unit 1)
+          (reference "R28") (unit 1)
         )
       )
     )
@@ -3272,7 +3272,7 @@
   (symbol (lib_id "Device:C") (at 172.72 118.11 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 06ba4f74-3b59-47fa-b1f9-e02dc173da30)
-    (property "Reference" "C20" (at 166.37 116.84 0)
+    (property "Reference" "C22" (at 166.37 116.84 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "226.8 nF" (at 163.83 120.65 0)
@@ -3289,7 +3289,7 @@
     (instances
       (project "motorcontrol"
         (path "/c95f7a6e-f487-49bd-bdde-185289dd6bb7"
-          (reference "C20") (unit 1)
+          (reference "C22") (unit 1)
         )
       )
     )
@@ -3298,13 +3298,13 @@
   (symbol (lib_id "SamacSys_Parts:SN74HC4851DGVR") (at 92.71 165.1 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 07d8c03e-b299-4127-8237-a80a25913aba)
-    (property "Reference" "IC13" (at 105.41 157.48 0)
+    (property "Reference" "IC5" (at 105.41 157.48 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "SN74HC4851DGVR" (at 105.41 160.02 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "SOP40P640X120-16N" (at 114.3 260.02 0)
+    (property "Footprint" "SamacSys_Parts:SOP40P640X120-16N" (at 114.3 260.02 0)
       (effects (font (size 1.27 1.27)) (justify left top) hide)
     )
     (property "Datasheet" "http://www.ti.com/lit/gpn/sn74hc4851" (at 114.3 360.02 0)
@@ -3344,7 +3344,7 @@
     (instances
       (project "motorcontrol"
         (path "/c95f7a6e-f487-49bd-bdde-185289dd6bb7"
-          (reference "IC13") (unit 1)
+          (reference "IC5") (unit 1)
         )
       )
     )
@@ -3353,7 +3353,7 @@
   (symbol (lib_id "power:GND") (at 259.08 114.3 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 0b7149fe-7af2-4903-9657-60b5003c562d)
-    (property "Reference" "#PWR024" (at 265.43 114.3 0)
+    (property "Reference" "#PWR027" (at 265.43 114.3 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 259.08 118.11 90)
@@ -3369,7 +3369,7 @@
     (instances
       (project "motorcontrol"
         (path "/c95f7a6e-f487-49bd-bdde-185289dd6bb7"
-          (reference "#PWR024") (unit 1)
+          (reference "#PWR027") (unit 1)
         )
       )
     )
@@ -3378,7 +3378,7 @@
   (symbol (lib_id "Device:C") (at 265.43 121.92 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 0c148b18-ba70-4c8d-bd90-3c6633d2ea41)
-    (property "Reference" "C30" (at 260.35 120.65 0)
+    (property "Reference" "C32" (at 260.35 120.65 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "226.8 nF" (at 256.54 124.46 0)
@@ -3395,7 +3395,7 @@
     (instances
       (project "motorcontrol"
         (path "/c95f7a6e-f487-49bd-bdde-185289dd6bb7"
-          (reference "C30") (unit 1)
+          (reference "C32") (unit 1)
         )
       )
     )
@@ -3404,7 +3404,7 @@
   (symbol (lib_id "power:+48V") (at 166.37 17.78 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 0dba9bd2-336f-448d-8aa1-88c8850de062)
-    (property "Reference" "#PWR014" (at 166.37 21.59 0)
+    (property "Reference" "#PWR018" (at 166.37 21.59 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+48V" (at 166.37 13.97 0)
@@ -3420,7 +3420,7 @@
     (instances
       (project "motorcontrol"
         (path "/c95f7a6e-f487-49bd-bdde-185289dd6bb7"
-          (reference "#PWR014") (unit 1)
+          (reference "#PWR018") (unit 1)
         )
       )
     )
@@ -3429,7 +3429,7 @@
   (symbol (lib_id "power:+48V") (at 259.08 21.59 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 1456475b-bc0b-407a-b2a1-a2f6241e3e16)
-    (property "Reference" "#PWR022" (at 259.08 25.4 0)
+    (property "Reference" "#PWR025" (at 259.08 25.4 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+48V" (at 259.08 16.51 0)
@@ -3445,7 +3445,7 @@
     (instances
       (project "motorcontrol"
         (path "/c95f7a6e-f487-49bd-bdde-185289dd6bb7"
-          (reference "#PWR022") (unit 1)
+          (reference "#PWR025") (unit 1)
         )
       )
     )
@@ -3454,13 +3454,13 @@
   (symbol (lib_id "SamacSys_Parts:TMP236AQDBZTQ1") (at 232.41 114.3 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 189ab5b6-0025-4802-bf71-ba496b2e9707)
-    (property "Reference" "IC11" (at 245.11 110.49 0)
+    (property "Reference" "IC12" (at 245.11 110.49 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "TMP236AQDBZTQ1" (at 238.76 121.92 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "SOT95P237X112-3N" (at 256.54 209.22 0)
+    (property "Footprint" "SamacSys_Parts:SOT95P237X112-3N" (at 256.54 209.22 0)
       (effects (font (size 1.27 1.27)) (justify left top) hide)
     )
     (property "Datasheet" "https://www.ti.com/lit/ds/symlink/tmp235-q1.pdf?HQS=dis-dk-null-digikeymode-dsf-pf-null-wwe&ts=1622811540803&ref_url=https%253A%252F%252Fwww.digikey.in%252F" (at 256.54 309.22 0)
@@ -3487,7 +3487,7 @@
     (instances
       (project "motorcontrol"
         (path "/c95f7a6e-f487-49bd-bdde-185289dd6bb7"
-          (reference "IC11") (unit 1)
+          (reference "IC12") (unit 1)
         )
       )
     )
@@ -3496,7 +3496,7 @@
   (symbol (lib_id "power:GND") (at 269.24 125.73 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 18dddb76-a1c3-4d15-b3fc-fba57930a3c1)
-    (property "Reference" "#PWR026" (at 269.24 132.08 0)
+    (property "Reference" "#PWR028" (at 269.24 132.08 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 269.24 130.81 0)
@@ -3512,7 +3512,7 @@
     (instances
       (project "motorcontrol"
         (path "/c95f7a6e-f487-49bd-bdde-185289dd6bb7"
-          (reference "#PWR026") (unit 1)
+          (reference "#PWR028") (unit 1)
         )
       )
     )
@@ -3521,7 +3521,7 @@
   (symbol (lib_id "Device:C") (at 205.74 50.8 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 1c7637b0-17dc-4a34-9ea6-1dc68b582247)
-    (property "Reference" "C23" (at 209.55 50.8 90)
+    (property "Reference" "C25" (at 209.55 50.8 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "C" (at 212.09 50.8 90)
@@ -3538,7 +3538,7 @@
     (instances
       (project "motorcontrol"
         (path "/c95f7a6e-f487-49bd-bdde-185289dd6bb7"
-          (reference "C23") (unit 1)
+          (reference "C25") (unit 1)
         )
       )
     )
@@ -3547,7 +3547,7 @@
   (symbol (lib_id "Device:R") (at 88.9 119.38 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 1e41fa70-8d32-4311-a43e-9fe72811147e)
-    (property "Reference" "R3" (at 91.44 118.11 0)
+    (property "Reference" "R7" (at 91.44 118.11 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1 k" (at 90.17 123.19 0)
@@ -3564,7 +3564,7 @@
     (instances
       (project "motorcontrol"
         (path "/c95f7a6e-f487-49bd-bdde-185289dd6bb7"
-          (reference "R3") (unit 1)
+          (reference "R7") (unit 1)
         )
       )
     )
@@ -3573,13 +3573,13 @@
   (symbol (lib_id "SamacSys_Parts:1EDN7126GXTMA1") (at 113.03 76.2 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 1f81b022-ac90-4e28-9ef8-c44646cd7fa2)
-    (property "Reference" "IC6" (at 132.08 93.98 0)
+    (property "Reference" "IC7" (at 132.08 93.98 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1EDN7126GXTMA1" (at 132.08 71.12 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "1EDN7126GXTMA1" (at 147.32 171.12 0)
+    (property "Footprint" "SamacSys_Parts:1EDN7126GXTMA1" (at 147.32 171.12 0)
       (effects (font (size 1.27 1.27)) (justify left top) hide)
     )
     (property "Datasheet" "https://www.infineon.com/dgdl/Infineon-DS_1EDN71x6G-DataSheet-v02_01-EN.pdf?fileId=8ac78c8c7c9758f2017ca3b96d9b77a6" (at 147.32 271.12 0)
@@ -3614,7 +3614,7 @@
     (instances
       (project "motorcontrol"
         (path "/c95f7a6e-f487-49bd-bdde-185289dd6bb7"
-          (reference "IC6") (unit 1)
+          (reference "IC7") (unit 1)
         )
       )
     )
@@ -3623,7 +3623,7 @@
   (symbol (lib_id "Device:R") (at 77.47 130.81 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 1fa3bd59-770f-4af5-a624-5fab4ff97ede)
-    (property "Reference" "R2" (at 80.01 129.54 0)
+    (property "Reference" "R5" (at 80.01 129.54 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "4.7 k" (at 80.01 133.35 0)
@@ -3640,7 +3640,7 @@
     (instances
       (project "motorcontrol"
         (path "/c95f7a6e-f487-49bd-bdde-185289dd6bb7"
-          (reference "R2") (unit 1)
+          (reference "R5") (unit 1)
         )
       )
     )
@@ -3649,7 +3649,7 @@
   (symbol (lib_id "Device:C_Small") (at 149.86 157.48 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 1ff86ed9-82c0-4f32-b20f-619ed101c41a)
-    (property "Reference" "C31" (at 144.78 160.02 90)
+    (property "Reference" "C15" (at 144.78 160.02 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "10 uH" (at 147.32 161.29 90)
@@ -3666,7 +3666,7 @@
     (instances
       (project "motorcontrol"
         (path "/c95f7a6e-f487-49bd-bdde-185289dd6bb7"
-          (reference "C31") (unit 1)
+          (reference "C15") (unit 1)
         )
       )
     )
@@ -3675,7 +3675,7 @@
   (symbol (lib_id "Device:R_Small") (at 90.17 167.64 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 20b4ebb5-0fa7-4b0d-b9ff-5cd3f1ce3bc8)
-    (property "Reference" "R27" (at 86.36 166.37 90)
+    (property "Reference" "R9" (at 86.36 166.37 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "R" (at 90.17 167.64 90)
@@ -3692,7 +3692,7 @@
     (instances
       (project "motorcontrol"
         (path "/c95f7a6e-f487-49bd-bdde-185289dd6bb7"
-          (reference "R27") (unit 1)
+          (reference "R9") (unit 1)
         )
       )
     )
@@ -3701,7 +3701,7 @@
   (symbol (lib_id "Device:C") (at 171.45 83.82 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 216c1111-c3af-4fa2-b7d3-2a71b16ee5e8)
-    (property "Reference" "C18" (at 168.91 87.63 0)
+    (property "Reference" "C20" (at 168.91 87.63 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "C" (at 168.91 90.17 0)
@@ -3718,7 +3718,7 @@
     (instances
       (project "motorcontrol"
         (path "/c95f7a6e-f487-49bd-bdde-185289dd6bb7"
-          (reference "C18") (unit 1)
+          (reference "C20") (unit 1)
         )
       )
     )
@@ -3755,7 +3755,7 @@
   (symbol (lib_id "Device:R_Small") (at 120.65 167.64 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 24644b27-58c1-43d7-ad03-5edd28a72a59)
-    (property "Reference" "R24" (at 124.46 168.91 90)
+    (property "Reference" "R14" (at 124.46 168.91 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "R" (at 120.65 167.64 90)
@@ -3772,7 +3772,7 @@
     (instances
       (project "motorcontrol"
         (path "/c95f7a6e-f487-49bd-bdde-185289dd6bb7"
-          (reference "R24") (unit 1)
+          (reference "R14") (unit 1)
         )
       )
     )
@@ -3781,7 +3781,7 @@
   (symbol (lib_id "PCM_arduino-library:Arduino_Uno_R4_Minima_Shield") (at 43.18 163.83 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 259ca128-7df8-4080-bbca-48966fde6d4a)
-    (property "Reference" "A2" (at 43.18 127 0)
+    (property "Reference" "A1" (at 43.18 127 0)
       (effects (font (size 1.524 1.524)))
     )
     (property "Value" "Arduino_Uno_R4_Minima_Shield" (at 43.18 129.54 0)
@@ -3834,7 +3834,7 @@
     (instances
       (project "motorcontrol"
         (path "/c95f7a6e-f487-49bd-bdde-185289dd6bb7"
-          (reference "A2") (unit 1)
+          (reference "A1") (unit 1)
         )
       )
     )
@@ -3843,7 +3843,7 @@
   (symbol (lib_id "power:GND") (at 158.75 158.75 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 2603dbe1-fd14-43d7-a346-884a37517951)
-    (property "Reference" "#PWR027" (at 165.1 158.75 0)
+    (property "Reference" "#PWR015" (at 165.1 158.75 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 161.29 157.48 90)
@@ -3859,7 +3859,7 @@
     (instances
       (project "motorcontrol"
         (path "/c95f7a6e-f487-49bd-bdde-185289dd6bb7"
-          (reference "#PWR027") (unit 1)
+          (reference "#PWR015") (unit 1)
         )
       )
     )
@@ -3868,7 +3868,7 @@
   (symbol (lib_id "Device:C_Small") (at 154.94 158.75 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 26d236d7-5081-4870-8d4d-cea0195af7e3)
-    (property "Reference" "C29" (at 156.21 156.21 90)
+    (property "Reference" "C18" (at 156.21 156.21 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "100 nF" (at 157.48 161.29 90)
@@ -3885,7 +3885,7 @@
     (instances
       (project "motorcontrol"
         (path "/c95f7a6e-f487-49bd-bdde-185289dd6bb7"
-          (reference "C29") (unit 1)
+          (reference "C18") (unit 1)
         )
       )
     )
@@ -3922,7 +3922,7 @@
   (symbol (lib_id "Device:C") (at 165.1 138.43 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 2b21c689-02e2-47ab-a6f7-64eea09144a5)
-    (property "Reference" "C17" (at 168.91 137.16 0)
+    (property "Reference" "C19" (at 168.91 137.16 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1 nF" (at 168.91 139.7 0)
@@ -3939,7 +3939,7 @@
     (instances
       (project "motorcontrol"
         (path "/c95f7a6e-f487-49bd-bdde-185289dd6bb7"
-          (reference "C17") (unit 1)
+          (reference "C19") (unit 1)
         )
       )
     )
@@ -3948,7 +3948,7 @@
   (symbol (lib_id "Device:R") (at 17.78 48.26 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 2dba8779-a5b4-45f9-9aa7-b2e938af2a52)
-    (property "Reference" "R4" (at 13.97 49.53 0)
+    (property "Reference" "R1" (at 13.97 49.53 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "R" (at 13.97 52.07 0)
@@ -3965,7 +3965,7 @@
     (instances
       (project "motorcontrol"
         (path "/c95f7a6e-f487-49bd-bdde-185289dd6bb7"
-          (reference "R4") (unit 1)
+          (reference "R1") (unit 1)
         )
       )
     )
@@ -3974,7 +3974,7 @@
   (symbol (lib_id "power:GND") (at 102.87 86.36 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 2dd167ba-a735-4ee5-bd10-5bf7516797c7)
-    (property "Reference" "#PWR012" (at 102.87 92.71 0)
+    (property "Reference" "#PWR013" (at 102.87 92.71 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 102.87 90.17 0)
@@ -3990,7 +3990,7 @@
     (instances
       (project "motorcontrol"
         (path "/c95f7a6e-f487-49bd-bdde-185289dd6bb7"
-          (reference "#PWR012") (unit 1)
+          (reference "#PWR013") (unit 1)
         )
       )
     )
@@ -3999,7 +3999,7 @@
   (symbol (lib_id "Device:R") (at 165.1 129.54 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 2e874bce-f2a9-46de-815c-23d16e620fa4)
-    (property "Reference" "R12" (at 167.64 128.27 0)
+    (property "Reference" "R20" (at 167.64 128.27 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "4.7 k" (at 167.64 130.81 0)
@@ -4016,7 +4016,7 @@
     (instances
       (project "motorcontrol"
         (path "/c95f7a6e-f487-49bd-bdde-185289dd6bb7"
-          (reference "R12") (unit 1)
+          (reference "R20") (unit 1)
         )
       )
     )
@@ -4025,7 +4025,7 @@
   (symbol (lib_id "Device:R") (at 198.12 50.8 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 37448635-356d-48b6-9716-4e36345bf1b6)
-    (property "Reference" "R15" (at 193.04 52.07 0)
+    (property "Reference" "R23" (at 193.04 52.07 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "R" (at 194.31 54.61 0)
@@ -4042,7 +4042,7 @@
     (instances
       (project "motorcontrol"
         (path "/c95f7a6e-f487-49bd-bdde-185289dd6bb7"
-          (reference "R15") (unit 1)
+          (reference "R23") (unit 1)
         )
       )
     )
@@ -4051,7 +4051,7 @@
   (symbol (lib_id "Device:C") (at 85.09 119.38 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 392e0842-1449-4b4c-942c-96dd67a277b9)
-    (property "Reference" "C5" (at 80.01 118.11 0)
+    (property "Reference" "C10" (at 80.01 118.11 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "226.8 nF" (at 76.2 121.92 0)
@@ -4068,7 +4068,7 @@
     (instances
       (project "motorcontrol"
         (path "/c95f7a6e-f487-49bd-bdde-185289dd6bb7"
-          (reference "C5") (unit 1)
+          (reference "C10") (unit 1)
         )
       )
     )
@@ -4077,7 +4077,7 @@
   (symbol (lib_id "Device:R_Small") (at 120.65 172.72 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 41c2e6b3-2784-4071-9629-1529e1d1a388)
-    (property "Reference" "R22" (at 124.46 173.99 90)
+    (property "Reference" "R16" (at 124.46 173.99 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "R" (at 120.65 172.72 90)
@@ -4094,7 +4094,7 @@
     (instances
       (project "motorcontrol"
         (path "/c95f7a6e-f487-49bd-bdde-185289dd6bb7"
-          (reference "R22") (unit 1)
+          (reference "R16") (unit 1)
         )
       )
     )
@@ -4103,13 +4103,13 @@
   (symbol (lib_id "SamacSys_Parts:TMP236AQDBZTQ1") (at 139.7 110.49 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 47321c9f-42a0-468a-b766-172d7046f00a)
-    (property "Reference" "IC7" (at 152.4 106.68 0)
+    (property "Reference" "IC8" (at 152.4 106.68 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "TMP236AQDBZTQ1" (at 146.05 118.11 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "SOT95P237X112-3N" (at 163.83 205.41 0)
+    (property "Footprint" "SamacSys_Parts:SOT95P237X112-3N" (at 163.83 205.41 0)
       (effects (font (size 1.27 1.27)) (justify left top) hide)
     )
     (property "Datasheet" "https://www.ti.com/lit/ds/symlink/tmp235-q1.pdf?HQS=dis-dk-null-digikeymode-dsf-pf-null-wwe&ts=1622811540803&ref_url=https%253A%252F%252Fwww.digikey.in%252F" (at 163.83 305.41 0)
@@ -4136,7 +4136,7 @@
     (instances
       (project "motorcontrol"
         (path "/c95f7a6e-f487-49bd-bdde-185289dd6bb7"
-          (reference "IC7") (unit 1)
+          (reference "IC8") (unit 1)
         )
       )
     )
@@ -4145,7 +4145,7 @@
   (symbol (lib_id "power:GND") (at 259.08 101.6 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 47b5ab51-3ceb-458e-a16e-11228d7f91c1)
-    (property "Reference" "#PWR023" (at 259.08 107.95 0)
+    (property "Reference" "#PWR026" (at 259.08 107.95 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 259.08 106.68 0)
@@ -4161,7 +4161,7 @@
     (instances
       (project "motorcontrol"
         (path "/c95f7a6e-f487-49bd-bdde-185289dd6bb7"
-          (reference "#PWR023") (unit 1)
+          (reference "#PWR026") (unit 1)
         )
       )
     )
@@ -4170,7 +4170,7 @@
   (symbol (lib_id "power:GND") (at 147.32 154.94 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 4bf12a66-1378-4e18-a1e6-2a2394476373)
-    (property "Reference" "#PWR025" (at 140.97 154.94 0)
+    (property "Reference" "#PWR014" (at 140.97 154.94 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 143.51 154.94 90)
@@ -4186,7 +4186,7 @@
     (instances
       (project "motorcontrol"
         (path "/c95f7a6e-f487-49bd-bdde-185289dd6bb7"
-          (reference "#PWR025") (unit 1)
+          (reference "#PWR014") (unit 1)
         )
       )
     )
@@ -4195,7 +4195,7 @@
   (symbol (lib_id "Device:R_Small") (at 90.17 172.72 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 53300bb3-4b20-4859-b4e8-464a7ec8d3be)
-    (property "Reference" "R28" (at 86.36 171.45 90)
+    (property "Reference" "R10" (at 86.36 171.45 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "R" (at 90.17 172.72 90)
@@ -4212,7 +4212,7 @@
     (instances
       (project "motorcontrol"
         (path "/c95f7a6e-f487-49bd-bdde-185289dd6bb7"
-          (reference "R28") (unit 1)
+          (reference "R10") (unit 1)
         )
       )
     )
@@ -4227,7 +4227,7 @@
     (property "Value" "TLI4971A075T5UE0001XUMA1" (at 91.44 17.78 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Footprint" "TLI4971A075T5UE0001XUMA1" (at 178.74 50.8 0)
+    (property "Footprint" "SamacSys_Parts:TLI4971A075T5UE0001XUMA1" (at 178.74 50.8 0)
       (effects (font (size 1.27 1.27)) (justify left top) hide)
     )
     (property "Datasheet" "https://www.infineon.com/dgdl/Infineon-TLI4971_25_50_75_120-DataSheet-v01_30-EN.pdf?fileId=5546d462700c0ae6017034d731621b09" (at 278.74 50.8 0)
@@ -4274,7 +4274,7 @@
   (symbol (lib_id "power:GND") (at 78.74 111.76 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 55b48f0c-f395-4de4-808c-31263c51dedc)
-    (property "Reference" "#PWR06" (at 85.09 111.76 0)
+    (property "Reference" "#PWR09" (at 85.09 111.76 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 78.74 115.57 90)
@@ -4290,7 +4290,7 @@
     (instances
       (project "motorcontrol"
         (path "/c95f7a6e-f487-49bd-bdde-185289dd6bb7"
-          (reference "#PWR06") (unit 1)
+          (reference "#PWR09") (unit 1)
         )
       )
     )
@@ -4325,7 +4325,7 @@
   (symbol (lib_id "Device:C_Small") (at 15.24 78.74 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 5892ec82-f7c9-475e-8a2a-f83b117f5be6)
-    (property "Reference" "C8" (at 17.78 76.2 0)
+    (property "Reference" "C2" (at 17.78 76.2 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100 nF" (at 17.78 78.74 0)
@@ -4342,7 +4342,7 @@
     (instances
       (project "motorcontrol"
         (path "/c95f7a6e-f487-49bd-bdde-185289dd6bb7"
-          (reference "C8") (unit 1)
+          (reference "C2") (unit 1)
         )
       )
     )
@@ -4351,7 +4351,7 @@
   (symbol (lib_id "Device:R_Small") (at 90.17 175.26 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 5a814c9c-810a-40ae-adab-3e6d5561bcb7)
-    (property "Reference" "R29" (at 86.36 173.99 90)
+    (property "Reference" "R11" (at 86.36 173.99 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "R" (at 90.17 175.26 90)
@@ -4368,7 +4368,7 @@
     (instances
       (project "motorcontrol"
         (path "/c95f7a6e-f487-49bd-bdde-185289dd6bb7"
-          (reference "R29") (unit 1)
+          (reference "R11") (unit 1)
         )
       )
     )
@@ -4377,7 +4377,7 @@
   (symbol (lib_id "Device:C") (at 67.31 52.07 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 5ae38a0b-d3b4-4031-9c47-21ba5090bb74)
-    (property "Reference" "C9" (at 67.31 55.88 90)
+    (property "Reference" "C5" (at 67.31 55.88 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "C" (at 67.31 58.42 90)
@@ -4394,7 +4394,7 @@
     (instances
       (project "motorcontrol"
         (path "/c95f7a6e-f487-49bd-bdde-185289dd6bb7"
-          (reference "C9") (unit 1)
+          (reference "C5") (unit 1)
         )
       )
     )
@@ -4403,7 +4403,7 @@
   (symbol (lib_id "Device:R") (at 247.65 39.37 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 5b47966d-3cfe-4b24-a5e1-114b310ae1c3)
-    (property "Reference" "R17" (at 247.65 39.37 90)
+    (property "Reference" "R25" (at 247.65 39.37 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "R" (at 250.19 41.91 90)
@@ -4420,7 +4420,7 @@
     (instances
       (project "motorcontrol"
         (path "/c95f7a6e-f487-49bd-bdde-185289dd6bb7"
-          (reference "R17") (unit 1)
+          (reference "R25") (unit 1)
         )
       )
     )
@@ -4429,7 +4429,7 @@
   (symbol (lib_id "power:GND") (at 165.1 142.24 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 5ba1e2c4-9ff6-4173-becb-af671f785113)
-    (property "Reference" "#PWR013" (at 165.1 148.59 0)
+    (property "Reference" "#PWR017" (at 165.1 148.59 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 161.29 143.51 0)
@@ -4445,7 +4445,7 @@
     (instances
       (project "motorcontrol"
         (path "/c95f7a6e-f487-49bd-bdde-185289dd6bb7"
-          (reference "#PWR013") (unit 1)
+          (reference "#PWR017") (unit 1)
         )
       )
     )
@@ -4454,7 +4454,7 @@
   (symbol (lib_id "Device:C_Small") (at 171.45 93.98 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 5be7a907-65d6-4f7d-b4d4-334d557f1e13)
-    (property "Reference" "C4" (at 168.91 96.52 90)
+    (property "Reference" "C21" (at 168.91 96.52 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "6.8 nF" (at 173.99 99.06 90)
@@ -4471,7 +4471,7 @@
     (instances
       (project "motorcontrol"
         (path "/c95f7a6e-f487-49bd-bdde-185289dd6bb7"
-          (reference "C4") (unit 1)
+          (reference "C21") (unit 1)
         )
       )
     )
@@ -4480,7 +4480,7 @@
   (symbol (lib_id "Device:C") (at 67.31 97.79 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 5c20cda1-e811-4691-a4db-fdff157cd428)
-    (property "Reference" "C10" (at 67.31 101.6 90)
+    (property "Reference" "C6" (at 67.31 101.6 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "C" (at 67.31 104.14 90)
@@ -4497,7 +4497,7 @@
     (instances
       (project "motorcontrol"
         (path "/c95f7a6e-f487-49bd-bdde-185289dd6bb7"
-          (reference "C10") (unit 1)
+          (reference "C6") (unit 1)
         )
       )
     )
@@ -4506,7 +4506,7 @@
   (symbol (lib_id "power:GND") (at 77.47 143.51 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 638b0ad0-5120-4344-8a66-754cf5d5b626)
-    (property "Reference" "#PWR03" (at 77.47 149.86 0)
+    (property "Reference" "#PWR06" (at 77.47 149.86 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 77.47 148.59 0)
@@ -4522,7 +4522,7 @@
     (instances
       (project "motorcontrol"
         (path "/c95f7a6e-f487-49bd-bdde-185289dd6bb7"
-          (reference "#PWR03") (unit 1)
+          (reference "#PWR06") (unit 1)
         )
       )
     )
@@ -4557,7 +4557,7 @@
   (symbol (lib_id "power:GND") (at 195.58 90.17 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 6b9b4618-a4ab-4aac-8cc3-de430693e6c4)
-    (property "Reference" "#PWR020" (at 195.58 96.52 0)
+    (property "Reference" "#PWR023" (at 195.58 96.52 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 195.58 93.98 0)
@@ -4573,7 +4573,7 @@
     (instances
       (project "motorcontrol"
         (path "/c95f7a6e-f487-49bd-bdde-185289dd6bb7"
-          (reference "#PWR020") (unit 1)
+          (reference "#PWR023") (unit 1)
         )
       )
     )
@@ -4610,7 +4610,7 @@
   (symbol (lib_id "Device:R") (at 154.94 35.56 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 6e5a8925-f715-423b-ae59-6bb13736b1b6)
-    (property "Reference" "R10" (at 154.94 35.56 90)
+    (property "Reference" "R18" (at 154.94 35.56 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "R" (at 157.48 38.1 90)
@@ -4627,7 +4627,7 @@
     (instances
       (project "motorcontrol"
         (path "/c95f7a6e-f487-49bd-bdde-185289dd6bb7"
-          (reference "R10") (unit 1)
+          (reference "R18") (unit 1)
         )
       )
     )
@@ -4636,13 +4636,13 @@
   (symbol (lib_id "SamacSys_Parts:1EDN7126GXTMA1") (at 113.03 30.48 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 70221d96-81d2-49b9-a828-5bcfb8f9317c)
-    (property "Reference" "IC5" (at 132.08 48.26 0)
+    (property "Reference" "IC6" (at 132.08 48.26 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1EDN7126GXTMA1" (at 132.08 25.4 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "1EDN7126GXTMA1" (at 147.32 125.4 0)
+    (property "Footprint" "SamacSys_Parts:1EDN7126GXTMA1" (at 147.32 125.4 0)
       (effects (font (size 1.27 1.27)) (justify left top) hide)
     )
     (property "Datasheet" "https://www.infineon.com/dgdl/Infineon-DS_1EDN71x6G-DataSheet-v02_01-EN.pdf?fileId=8ac78c8c7c9758f2017ca3b96d9b77a6" (at 147.32 225.4 0)
@@ -4677,7 +4677,7 @@
     (instances
       (project "motorcontrol"
         (path "/c95f7a6e-f487-49bd-bdde-185289dd6bb7"
-          (reference "IC5") (unit 1)
+          (reference "IC6") (unit 1)
         )
       )
     )
@@ -4686,7 +4686,7 @@
   (symbol (lib_id "Device:R_Small") (at 120.65 175.26 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 702c6475-de0c-495e-8869-17efb8d1944c)
-    (property "Reference" "R25" (at 124.46 176.53 90)
+    (property "Reference" "R17" (at 124.46 176.53 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "R" (at 120.65 175.26 90)
@@ -4703,7 +4703,7 @@
     (instances
       (project "motorcontrol"
         (path "/c95f7a6e-f487-49bd-bdde-185289dd6bb7"
-          (reference "R25") (unit 1)
+          (reference "R17") (unit 1)
         )
       )
     )
@@ -4712,7 +4712,7 @@
   (symbol (lib_id "power:GND") (at 166.37 97.79 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 70884041-f2b1-4747-8be9-402f70f79a97)
-    (property "Reference" "#PWR015" (at 166.37 104.14 0)
+    (property "Reference" "#PWR019" (at 166.37 104.14 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 166.37 102.87 0)
@@ -4728,7 +4728,7 @@
     (instances
       (project "motorcontrol"
         (path "/c95f7a6e-f487-49bd-bdde-185289dd6bb7"
-          (reference "#PWR015") (unit 1)
+          (reference "#PWR019") (unit 1)
         )
       )
     )
@@ -4737,7 +4737,7 @@
   (symbol (lib_id "Device:R") (at 106.68 92.71 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 73d90305-1630-4d69-93e7-d157ca07dd27)
-    (property "Reference" "R9" (at 102.87 92.71 0)
+    (property "Reference" "R13" (at 102.87 92.71 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "R" (at 102.87 95.25 0)
@@ -4754,7 +4754,7 @@
     (instances
       (project "motorcontrol"
         (path "/c95f7a6e-f487-49bd-bdde-185289dd6bb7"
-          (reference "R9") (unit 1)
+          (reference "R13") (unit 1)
         )
       )
     )
@@ -4763,7 +4763,7 @@
   (symbol (lib_id "power:GND") (at 102.87 40.64 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 75246659-c26b-4219-9793-8906030290a1)
-    (property "Reference" "#PWR011" (at 102.87 46.99 0)
+    (property "Reference" "#PWR012" (at 102.87 46.99 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 101.6 44.45 0)
@@ -4779,7 +4779,7 @@
     (instances
       (project "motorcontrol"
         (path "/c95f7a6e-f487-49bd-bdde-185289dd6bb7"
-          (reference "#PWR011") (unit 1)
+          (reference "#PWR012") (unit 1)
         )
       )
     )
@@ -4788,7 +4788,7 @@
   (symbol (lib_id "Device:C") (at 25.4 48.26 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 785d9d05-ef4a-4d11-9cd6-6c427c81f635)
-    (property "Reference" "C1" (at 29.21 48.26 90)
+    (property "Reference" "C3" (at 29.21 48.26 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "C" (at 31.75 48.26 90)
@@ -4805,7 +4805,7 @@
     (instances
       (project "motorcontrol"
         (path "/c95f7a6e-f487-49bd-bdde-185289dd6bb7"
-          (reference "C1") (unit 1)
+          (reference "C3") (unit 1)
         )
       )
     )
@@ -4814,7 +4814,7 @@
   (symbol (lib_id "Device:R") (at 105.41 46.99 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 7c26eb35-65e9-4f5b-a16f-d6b8d8c73c09)
-    (property "Reference" "R8" (at 101.6 48.26 0)
+    (property "Reference" "R12" (at 101.6 48.26 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "R" (at 101.6 50.8 0)
@@ -4831,7 +4831,7 @@
     (instances
       (project "motorcontrol"
         (path "/c95f7a6e-f487-49bd-bdde-185289dd6bb7"
-          (reference "R8") (unit 1)
+          (reference "R12") (unit 1)
         )
       )
     )
@@ -4840,7 +4840,7 @@
   (symbol (lib_id "Device:C") (at 25.4 93.98 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 7f4bdb92-1abe-4b08-9419-b9feb5c3a055)
-    (property "Reference" "C2" (at 29.21 93.98 90)
+    (property "Reference" "C4" (at 29.21 93.98 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "C" (at 31.75 93.98 90)
@@ -4857,7 +4857,7 @@
     (instances
       (project "motorcontrol"
         (path "/c95f7a6e-f487-49bd-bdde-185289dd6bb7"
-          (reference "C2") (unit 1)
+          (reference "C4") (unit 1)
         )
       )
     )
@@ -4866,7 +4866,7 @@
   (symbol (lib_id "Device:R") (at 88.9 111.76 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 7fb31b03-70f1-4941-b2ee-1e9b5278e610)
-    (property "Reference" "R1" (at 91.44 110.49 0)
+    (property "Reference" "R6" (at 91.44 110.49 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1 k" (at 90.17 114.3 0)
@@ -4883,22 +4883,22 @@
     (instances
       (project "motorcontrol"
         (path "/c95f7a6e-f487-49bd-bdde-185289dd6bb7"
-          (reference "R1") (unit 1)
+          (reference "R6") (unit 1)
         )
       )
     )
   )
 
-  (symbol (lib_id "Diode:1N4001") (at 20.32 66.04 270) (unit 1)
+  (symbol (lib_id "Diode:1N4007") (at 20.32 66.04 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 805b0211-dbdc-4ff6-8aa2-a7ebf62ffc3b)
-    (property "Reference" "D1" (at 22.86 64.77 90)
+    (property "Reference" "D?" (at 22.86 64.77 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "1N4001" (at 22.86 67.31 90)
+    (property "Value" "1N4007" (at 22.86 67.31 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" (at 20.32 66.04 0)
+    (property "Footprint" "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" (at 15.875 66.04 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "http://www.vishay.com/docs/88503/1n4001.pdf" (at 20.32 66.04 0)
@@ -4915,7 +4915,7 @@
     (instances
       (project "motorcontrol"
         (path "/c95f7a6e-f487-49bd-bdde-185289dd6bb7"
-          (reference "D1") (unit 1)
+          (reference "D?") (unit 1)
         )
       )
     )
@@ -4924,7 +4924,7 @@
   (symbol (lib_id "power:GND") (at 15.24 41.91 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 809f69cd-f8ad-4927-87ba-4fcbb4ad4b9b)
-    (property "Reference" "#PWR09" (at 15.24 48.26 0)
+    (property "Reference" "#PWR01" (at 15.24 48.26 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 13.97 45.72 0)
@@ -4940,7 +4940,7 @@
     (instances
       (project "motorcontrol"
         (path "/c95f7a6e-f487-49bd-bdde-185289dd6bb7"
-          (reference "#PWR09") (unit 1)
+          (reference "#PWR01") (unit 1)
         )
       )
     )
@@ -4949,7 +4949,7 @@
   (symbol (lib_id "Device:R") (at 269.24 121.92 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 80cd9516-4069-4120-aaee-88eb9d366c72)
-    (property "Reference" "R21" (at 271.78 120.65 0)
+    (property "Reference" "R29" (at 271.78 120.65 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1 k" (at 271.78 123.19 0)
@@ -4966,7 +4966,7 @@
     (instances
       (project "motorcontrol"
         (path "/c95f7a6e-f487-49bd-bdde-185289dd6bb7"
-          (reference "R21") (unit 1)
+          (reference "R29") (unit 1)
         )
       )
     )
@@ -4975,7 +4975,7 @@
   (symbol (lib_id "power:+48V") (at 78.74 19.05 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 832a07cb-f1bb-4bdf-8106-045938e66d60)
-    (property "Reference" "#PWR02" (at 78.74 22.86 0)
+    (property "Reference" "#PWR07" (at 78.74 22.86 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+48V" (at 78.74 13.97 0)
@@ -4991,7 +4991,7 @@
     (instances
       (project "motorcontrol"
         (path "/c95f7a6e-f487-49bd-bdde-185289dd6bb7"
-          (reference "#PWR02") (unit 1)
+          (reference "#PWR07") (unit 1)
         )
       )
     )
@@ -5000,7 +5000,7 @@
   (symbol (lib_id "Device:C") (at 247.65 100.33 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 9002ccdf-8148-438a-9aa7-2bde5bd1b110)
-    (property "Reference" "C26" (at 247.65 104.14 90)
+    (property "Reference" "C28" (at 247.65 104.14 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "C" (at 247.65 106.68 90)
@@ -5017,7 +5017,7 @@
     (instances
       (project "motorcontrol"
         (path "/c95f7a6e-f487-49bd-bdde-185289dd6bb7"
-          (reference "C26") (unit 1)
+          (reference "C28") (unit 1)
         )
       )
     )
@@ -5032,7 +5032,7 @@
     (property "Value" "1EDN7126GXTMA1" (at 44.45 26.67 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "1EDN7126GXTMA1" (at 59.69 126.67 0)
+    (property "Footprint" "SamacSys_Parts:1EDN7126GXTMA1" (at 59.69 126.67 0)
       (effects (font (size 1.27 1.27)) (justify left top) hide)
     )
     (property "Datasheet" "https://www.infineon.com/dgdl/Infineon-DS_1EDN71x6G-DataSheet-v02_01-EN.pdf?fileId=8ac78c8c7c9758f2017ca3b96d9b77a6" (at 59.69 226.67 0)
@@ -5076,7 +5076,7 @@
   (symbol (lib_id "power:GND") (at 88.9 123.19 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 91658bbc-6ccd-4aaf-936d-5fe96d53e4d3)
-    (property "Reference" "#PWR05" (at 88.9 129.54 0)
+    (property "Reference" "#PWR010" (at 88.9 129.54 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 88.9 128.27 0)
@@ -5092,7 +5092,7 @@
     (instances
       (project "motorcontrol"
         (path "/c95f7a6e-f487-49bd-bdde-185289dd6bb7"
-          (reference "#PWR05") (unit 1)
+          (reference "#PWR010") (unit 1)
         )
       )
     )
@@ -5129,7 +5129,7 @@
   (symbol (lib_id "power:GND") (at 195.58 44.45 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 931314f1-a649-4c78-ba94-b5ec65226e5d)
-    (property "Reference" "#PWR019" (at 195.58 50.8 0)
+    (property "Reference" "#PWR022" (at 195.58 50.8 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 194.31 48.26 0)
@@ -5145,7 +5145,7 @@
     (instances
       (project "motorcontrol"
         (path "/c95f7a6e-f487-49bd-bdde-185289dd6bb7"
-          (reference "#PWR019") (unit 1)
+          (reference "#PWR022") (unit 1)
         )
       )
     )
@@ -5154,7 +5154,7 @@
   (symbol (lib_id "power:GND") (at 166.37 110.49 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 94ca600a-f288-4108-a2fb-86eb632d267c)
-    (property "Reference" "#PWR016" (at 172.72 110.49 0)
+    (property "Reference" "#PWR020" (at 172.72 110.49 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 166.37 114.3 90)
@@ -5170,7 +5170,7 @@
     (instances
       (project "motorcontrol"
         (path "/c95f7a6e-f487-49bd-bdde-185289dd6bb7"
-          (reference "#PWR016") (unit 1)
+          (reference "#PWR020") (unit 1)
         )
       )
     )
@@ -5179,7 +5179,7 @@
   (symbol (lib_id "power:GND") (at 68.58 181.61 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 976881f4-a007-4810-a99a-e152e89ffc41)
-    (property "Reference" "#PWR028" (at 74.93 181.61 0)
+    (property "Reference" "#PWR05" (at 74.93 181.61 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 71.12 181.61 90)
@@ -5195,7 +5195,7 @@
     (instances
       (project "motorcontrol"
         (path "/c95f7a6e-f487-49bd-bdde-185289dd6bb7"
-          (reference "#PWR028") (unit 1)
+          (reference "#PWR05") (unit 1)
         )
       )
     )
@@ -5210,7 +5210,7 @@
     (property "Value" "1EDN7126GXTMA1" (at 44.45 72.39 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "1EDN7126GXTMA1" (at 59.69 172.39 0)
+    (property "Footprint" "SamacSys_Parts:1EDN7126GXTMA1" (at 59.69 172.39 0)
       (effects (font (size 1.27 1.27)) (justify left top) hide)
     )
     (property "Datasheet" "https://www.infineon.com/dgdl/Infineon-DS_1EDN71x6G-DataSheet-v02_01-EN.pdf?fileId=8ac78c8c7c9758f2017ca3b96d9b77a6" (at 59.69 272.39 0)
@@ -5254,7 +5254,7 @@
   (symbol (lib_id "Device:C") (at 77.47 139.7 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 9bde3152-e00c-42f3-b046-ab78f8ec27a7)
-    (property "Reference" "C3" (at 81.28 138.43 0)
+    (property "Reference" "C7" (at 81.28 138.43 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1 nF" (at 81.28 140.97 0)
@@ -5271,7 +5271,7 @@
     (instances
       (project "motorcontrol"
         (path "/c95f7a6e-f487-49bd-bdde-185289dd6bb7"
-          (reference "C3") (unit 1)
+          (reference "C7") (unit 1)
         )
       )
     )
@@ -5306,7 +5306,7 @@
   (symbol (lib_id "Device:R") (at 67.31 82.55 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid a7fca4b6-ba7a-4979-bf7a-4ff15931ac60)
-    (property "Reference" "R7" (at 67.31 82.55 90)
+    (property "Reference" "R4" (at 67.31 82.55 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "R" (at 69.85 85.09 90)
@@ -5323,7 +5323,7 @@
     (instances
       (project "motorcontrol"
         (path "/c95f7a6e-f487-49bd-bdde-185289dd6bb7"
-          (reference "R7") (unit 1)
+          (reference "R4") (unit 1)
         )
       )
     )
@@ -5332,7 +5332,7 @@
   (symbol (lib_id "Device:C") (at 247.65 54.61 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid a89936a0-e875-4a9a-a7f5-7a2f3231463c)
-    (property "Reference" "C25" (at 247.65 58.42 90)
+    (property "Reference" "C27" (at 247.65 58.42 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "C" (at 247.65 60.96 90)
@@ -5349,7 +5349,7 @@
     (instances
       (project "motorcontrol"
         (path "/c95f7a6e-f487-49bd-bdde-185289dd6bb7"
-          (reference "C25") (unit 1)
+          (reference "C27") (unit 1)
         )
       )
     )
@@ -5358,7 +5358,7 @@
   (symbol (lib_id "power:GND") (at 78.74 99.06 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid add250b1-6b0e-4e6b-a94b-f9a2ff322fea)
-    (property "Reference" "#PWR01" (at 78.74 105.41 0)
+    (property "Reference" "#PWR08" (at 78.74 105.41 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 78.74 104.14 0)
@@ -5374,7 +5374,7 @@
     (instances
       (project "motorcontrol"
         (path "/c95f7a6e-f487-49bd-bdde-185289dd6bb7"
-          (reference "#PWR01") (unit 1)
+          (reference "#PWR08") (unit 1)
         )
       )
     )
@@ -5383,13 +5383,13 @@
   (symbol (lib_id "SamacSys_Parts:TLI4971A075T5UE0001XUMA1") (at 264.16 82.55 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b02bb174-829d-49cd-be77-ca24d6c61aed)
-    (property "Reference" "IC12" (at 269.24 44.45 0)
+    (property "Reference" "IC13" (at 269.24 44.45 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "TLI4971A075T5UE0001XUMA1" (at 271.78 20.32 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Footprint" "TLI4971A075T5UE0001XUMA1" (at 359.08 53.34 0)
+    (property "Footprint" "SamacSys_Parts:TLI4971A075T5UE0001XUMA1" (at 359.08 53.34 0)
       (effects (font (size 1.27 1.27)) (justify left top) hide)
     )
     (property "Datasheet" "https://www.infineon.com/dgdl/Infineon-TLI4971_25_50_75_120-DataSheet-v01_30-EN.pdf?fileId=5546d462700c0ae6017034d731621b09" (at 459.08 53.34 0)
@@ -5427,7 +5427,7 @@
     (instances
       (project "motorcontrol"
         (path "/c95f7a6e-f487-49bd-bdde-185289dd6bb7"
-          (reference "IC12") (unit 1)
+          (reference "IC13") (unit 1)
         )
       )
     )
@@ -5436,7 +5436,7 @@
   (symbol (lib_id "Device:C") (at 154.94 50.8 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b8601dd2-1c65-49ba-993f-6deecf942640)
-    (property "Reference" "C15" (at 154.94 54.61 90)
+    (property "Reference" "C16" (at 154.94 54.61 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "C" (at 154.94 57.15 90)
@@ -5453,7 +5453,7 @@
     (instances
       (project "motorcontrol"
         (path "/c95f7a6e-f487-49bd-bdde-185289dd6bb7"
-          (reference "C15") (unit 1)
+          (reference "C16") (unit 1)
         )
       )
     )
@@ -5462,7 +5462,7 @@
   (symbol (lib_id "Device:R") (at 247.65 85.09 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid be08a86d-1e17-486c-bf7d-0a9d43d8dc39)
-    (property "Reference" "R18" (at 247.65 85.09 90)
+    (property "Reference" "R26" (at 247.65 85.09 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "R" (at 250.19 87.63 90)
@@ -5479,7 +5479,7 @@
     (instances
       (project "motorcontrol"
         (path "/c95f7a6e-f487-49bd-bdde-185289dd6bb7"
-          (reference "R18") (unit 1)
+          (reference "R26") (unit 1)
         )
       )
     )
@@ -5488,7 +5488,7 @@
   (symbol (lib_id "Device:R") (at 257.81 133.35 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid be2b78aa-95a0-47f1-956e-d402410c24ad)
-    (property "Reference" "R19" (at 260.35 132.08 0)
+    (property "Reference" "R27" (at 260.35 132.08 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "4.7 k" (at 260.35 134.62 0)
@@ -5505,7 +5505,7 @@
     (instances
       (project "motorcontrol"
         (path "/c95f7a6e-f487-49bd-bdde-185289dd6bb7"
-          (reference "R19") (unit 1)
+          (reference "R27") (unit 1)
         )
       )
     )
@@ -5540,7 +5540,7 @@
   (symbol (lib_id "Device:C") (at 83.82 85.09 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid c10616a6-e940-447a-968b-a78e50a7ffb2)
-    (property "Reference" "C6" (at 81.28 88.9 0)
+    (property "Reference" "C8" (at 81.28 88.9 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "C" (at 81.28 91.44 0)
@@ -5557,7 +5557,7 @@
     (instances
       (project "motorcontrol"
         (path "/c95f7a6e-f487-49bd-bdde-185289dd6bb7"
-          (reference "C6") (unit 1)
+          (reference "C8") (unit 1)
         )
       )
     )
@@ -5566,7 +5566,7 @@
   (symbol (lib_id "Device:R_Small") (at 120.65 170.18 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid c1500fa6-0568-4be8-871e-56fb3ffb5978)
-    (property "Reference" "R23" (at 124.46 171.45 90)
+    (property "Reference" "R15" (at 124.46 171.45 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "R" (at 120.65 170.18 90)
@@ -5583,7 +5583,7 @@
     (instances
       (project "motorcontrol"
         (path "/c95f7a6e-f487-49bd-bdde-185289dd6bb7"
-          (reference "R23") (unit 1)
+          (reference "R15") (unit 1)
         )
       )
     )
@@ -5592,7 +5592,7 @@
   (symbol (lib_id "power:GND") (at 176.53 121.92 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid c625324f-8bfd-44f2-a6eb-bef95e579500)
-    (property "Reference" "#PWR018" (at 176.53 128.27 0)
+    (property "Reference" "#PWR021" (at 176.53 128.27 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 176.53 127 0)
@@ -5608,7 +5608,7 @@
     (instances
       (project "motorcontrol"
         (path "/c95f7a6e-f487-49bd-bdde-185289dd6bb7"
-          (reference "#PWR018") (unit 1)
+          (reference "#PWR021") (unit 1)
         )
       )
     )
@@ -5617,7 +5617,7 @@
   (symbol (lib_id "Device:C_Small") (at 195.58 81.28 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid cc759b35-bde3-4eb7-b510-b6cd6fede998)
-    (property "Reference" "C22" (at 198.12 78.74 0)
+    (property "Reference" "C24" (at 198.12 78.74 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100 nF" (at 198.12 81.28 0)
@@ -5634,7 +5634,7 @@
     (instances
       (project "motorcontrol"
         (path "/c95f7a6e-f487-49bd-bdde-185289dd6bb7"
-          (reference "C22") (unit 1)
+          (reference "C24") (unit 1)
         )
       )
     )
@@ -5643,7 +5643,7 @@
   (symbol (lib_id "Device:C_Small") (at 195.58 35.56 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid cd870283-10b9-4f73-a5ec-ebf8a8c29ad9)
-    (property "Reference" "C21" (at 198.12 33.02 0)
+    (property "Reference" "C23" (at 198.12 33.02 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100 nF" (at 198.12 35.56 0)
@@ -5660,7 +5660,7 @@
     (instances
       (project "motorcontrol"
         (path "/c95f7a6e-f487-49bd-bdde-185289dd6bb7"
-          (reference "C21") (unit 1)
+          (reference "C23") (unit 1)
         )
       )
     )
@@ -5669,7 +5669,7 @@
   (symbol (lib_id "Device:C_Small") (at 264.16 97.79 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid cd8f34bc-8e33-4a87-8a49-dc28e8cdf8a7)
-    (property "Reference" "C19" (at 261.62 100.33 90)
+    (property "Reference" "C31" (at 261.62 100.33 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "6.8 nF" (at 266.7 102.87 90)
@@ -5686,7 +5686,7 @@
     (instances
       (project "motorcontrol"
         (path "/c95f7a6e-f487-49bd-bdde-185289dd6bb7"
-          (reference "C19") (unit 1)
+          (reference "C31") (unit 1)
         )
       )
     )
@@ -5695,7 +5695,7 @@
   (symbol (lib_id "Device:R") (at 176.53 110.49 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d0c3568d-aea2-44d1-940b-87b59d7c301a)
-    (property "Reference" "R13" (at 177.8 110.49 0)
+    (property "Reference" "R21" (at 177.8 110.49 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1 k" (at 177.8 113.03 0)
@@ -5712,7 +5712,7 @@
     (instances
       (project "motorcontrol"
         (path "/c95f7a6e-f487-49bd-bdde-185289dd6bb7"
-          (reference "R13") (unit 1)
+          (reference "R21") (unit 1)
         )
       )
     )
@@ -5721,7 +5721,7 @@
   (symbol (lib_id "Device:C") (at 205.74 96.52 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d1a00df1-f3b4-4d67-992c-86b5587a5a36)
-    (property "Reference" "C24" (at 209.55 96.52 90)
+    (property "Reference" "C26" (at 209.55 96.52 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "C" (at 212.09 96.52 90)
@@ -5738,7 +5738,7 @@
     (instances
       (project "motorcontrol"
         (path "/c95f7a6e-f487-49bd-bdde-185289dd6bb7"
-          (reference "C24") (unit 1)
+          (reference "C26") (unit 1)
         )
       )
     )
@@ -5813,7 +5813,7 @@
   (symbol (lib_id "Device:R") (at 19.05 93.98 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid da96fe7b-603d-4194-953a-e88a2ab476df)
-    (property "Reference" "R6" (at 15.24 93.98 0)
+    (property "Reference" "R2" (at 15.24 93.98 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "R" (at 15.24 96.52 0)
@@ -5830,7 +5830,7 @@
     (instances
       (project "motorcontrol"
         (path "/c95f7a6e-f487-49bd-bdde-185289dd6bb7"
-          (reference "R6") (unit 1)
+          (reference "R2") (unit 1)
         )
       )
     )
@@ -5839,13 +5839,13 @@
   (symbol (lib_id "SamacSys_Parts:1EDN7126GXTMA1") (at 205.74 34.29 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid daad9bab-fa90-4ced-a72b-51df86186546)
-    (property "Reference" "IC9" (at 224.79 52.07 0)
+    (property "Reference" "IC10" (at 224.79 52.07 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1EDN7126GXTMA1" (at 224.79 29.21 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "1EDN7126GXTMA1" (at 240.03 129.21 0)
+    (property "Footprint" "SamacSys_Parts:1EDN7126GXTMA1" (at 240.03 129.21 0)
       (effects (font (size 1.27 1.27)) (justify left top) hide)
     )
     (property "Datasheet" "https://www.infineon.com/dgdl/Infineon-DS_1EDN71x6G-DataSheet-v02_01-EN.pdf?fileId=8ac78c8c7c9758f2017ca3b96d9b77a6" (at 240.03 229.21 0)
@@ -5880,7 +5880,7 @@
     (instances
       (project "motorcontrol"
         (path "/c95f7a6e-f487-49bd-bdde-185289dd6bb7"
-          (reference "IC9") (unit 1)
+          (reference "IC10") (unit 1)
         )
       )
     )
@@ -5889,7 +5889,7 @@
   (symbol (lib_id "Device:R_Small") (at 90.17 165.1 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid dbe7bb00-c450-4754-b44f-cb837947afdc)
-    (property "Reference" "R26" (at 86.36 163.83 90)
+    (property "Reference" "R8" (at 86.36 163.83 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "R" (at 90.17 165.1 90)
@@ -5906,7 +5906,7 @@
     (instances
       (project "motorcontrol"
         (path "/c95f7a6e-f487-49bd-bdde-185289dd6bb7"
-          (reference "R26") (unit 1)
+          (reference "R8") (unit 1)
         )
       )
     )
@@ -5915,7 +5915,7 @@
   (symbol (lib_id "Device:C_Small") (at 15.24 33.02 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid dd914c7e-ff4a-4eb2-ad65-eda5b3341e32)
-    (property "Reference" "C7" (at 17.78 30.48 0)
+    (property "Reference" "C1" (at 17.78 30.48 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100 nF" (at 17.78 33.02 0)
@@ -5932,7 +5932,7 @@
     (instances
       (project "motorcontrol"
         (path "/c95f7a6e-f487-49bd-bdde-185289dd6bb7"
-          (reference "C7") (unit 1)
+          (reference "C1") (unit 1)
         )
       )
     )
@@ -5941,13 +5941,13 @@
   (symbol (lib_id "SamacSys_Parts:TLI4971A075T5UE0001XUMA1") (at 171.45 78.74 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid e1917366-b478-4a5c-9d83-aa8210127135)
-    (property "Reference" "IC8" (at 176.53 40.64 0)
+    (property "Reference" "IC9" (at 176.53 40.64 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "TLI4971A075T5UE0001XUMA1" (at 179.07 16.51 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Footprint" "TLI4971A075T5UE0001XUMA1" (at 266.37 49.53 0)
+    (property "Footprint" "SamacSys_Parts:TLI4971A075T5UE0001XUMA1" (at 266.37 49.53 0)
       (effects (font (size 1.27 1.27)) (justify left top) hide)
     )
     (property "Datasheet" "https://www.infineon.com/dgdl/Infineon-TLI4971_25_50_75_120-DataSheet-v01_30-EN.pdf?fileId=5546d462700c0ae6017034d731621b09" (at 366.37 49.53 0)
@@ -5985,7 +5985,7 @@
     (instances
       (project "motorcontrol"
         (path "/c95f7a6e-f487-49bd-bdde-185289dd6bb7"
-          (reference "IC8") (unit 1)
+          (reference "IC9") (unit 1)
         )
       )
     )
@@ -5994,7 +5994,7 @@
   (symbol (lib_id "Device:C") (at 154.94 96.52 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid e21d1641-fd97-436e-a771-fd748e8700e8)
-    (property "Reference" "C16" (at 154.94 100.33 90)
+    (property "Reference" "C17" (at 154.94 100.33 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "C" (at 154.94 102.87 90)
@@ -6011,7 +6011,7 @@
     (instances
       (project "motorcontrol"
         (path "/c95f7a6e-f487-49bd-bdde-185289dd6bb7"
-          (reference "C16") (unit 1)
+          (reference "C17") (unit 1)
         )
       )
     )
@@ -6020,7 +6020,7 @@
   (symbol (lib_id "power:+7.5V") (at 25.4 22.86 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid e3b4361d-54b7-4e59-a8ed-419d97355a2e)
-    (property "Reference" "#PWR07" (at 25.4 26.67 0)
+    (property "Reference" "#PWR04" (at 25.4 26.67 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+7.5V" (at 25.4 17.78 0)
@@ -6036,7 +6036,7 @@
     (instances
       (project "motorcontrol"
         (path "/c95f7a6e-f487-49bd-bdde-185289dd6bb7"
-          (reference "#PWR07") (unit 1)
+          (reference "#PWR04") (unit 1)
         )
       )
     )
@@ -6045,7 +6045,7 @@
   (symbol (lib_id "Device:R") (at 67.31 36.83 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid e40aee67-e5b4-412b-8024-13b459e16139)
-    (property "Reference" "R5" (at 67.31 36.83 90)
+    (property "Reference" "R3" (at 67.31 36.83 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "R" (at 69.85 39.37 90)
@@ -6062,7 +6062,7 @@
     (instances
       (project "motorcontrol"
         (path "/c95f7a6e-f487-49bd-bdde-185289dd6bb7"
-          (reference "R5") (unit 1)
+          (reference "R3") (unit 1)
         )
       )
     )
@@ -6071,7 +6071,7 @@
   (symbol (lib_id "Device:R") (at 154.94 81.28 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid e7cdc55c-c039-4c7a-ac02-4760c2c755d9)
-    (property "Reference" "R11" (at 154.94 81.28 90)
+    (property "Reference" "R19" (at 154.94 81.28 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "R" (at 157.48 83.82 90)
@@ -6088,7 +6088,7 @@
     (instances
       (project "motorcontrol"
         (path "/c95f7a6e-f487-49bd-bdde-185289dd6bb7"
-          (reference "R11") (unit 1)
+          (reference "R19") (unit 1)
         )
       )
     )
@@ -6097,7 +6097,7 @@
   (symbol (lib_id "Device:C_Small") (at 83.82 95.25 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid e9837794-1fcf-47e3-ba97-711069738dae)
-    (property "Reference" "C32" (at 81.28 97.79 90)
+    (property "Reference" "C9" (at 81.28 97.79 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "6.8 nF" (at 86.36 100.33 90)
@@ -6114,7 +6114,7 @@
     (instances
       (project "motorcontrol"
         (path "/c95f7a6e-f487-49bd-bdde-185289dd6bb7"
-          (reference "C32") (unit 1)
+          (reference "C9") (unit 1)
         )
       )
     )
@@ -6123,7 +6123,7 @@
   (symbol (lib_id "power:GND") (at 92.71 182.88 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid eacc0175-7f87-44a4-abe2-2902ee06fca6)
-    (property "Reference" "#PWR04" (at 92.71 189.23 0)
+    (property "Reference" "#PWR011" (at 92.71 189.23 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 92.71 187.96 0)
@@ -6139,7 +6139,7 @@
     (instances
       (project "motorcontrol"
         (path "/c95f7a6e-f487-49bd-bdde-185289dd6bb7"
-          (reference "#PWR04") (unit 1)
+          (reference "#PWR011") (unit 1)
         )
       )
     )
@@ -6148,7 +6148,7 @@
   (symbol (lib_id "Device:R") (at 176.53 118.11 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid eb706c68-f5c3-47ce-8772-617805fcf1bf)
-    (property "Reference" "R14" (at 179.07 116.84 0)
+    (property "Reference" "R22" (at 179.07 116.84 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1 k" (at 179.07 119.38 0)
@@ -6165,7 +6165,7 @@
     (instances
       (project "motorcontrol"
         (path "/c95f7a6e-f487-49bd-bdde-185289dd6bb7"
-          (reference "R14") (unit 1)
+          (reference "R22") (unit 1)
         )
       )
     )
@@ -6174,7 +6174,7 @@
   (symbol (lib_id "power:GND") (at 15.24 87.63 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid f05a6f42-2797-4845-bde3-5ae411b12dec)
-    (property "Reference" "#PWR010" (at 15.24 93.98 0)
+    (property "Reference" "#PWR02" (at 15.24 93.98 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 15.24 91.44 0)
@@ -6190,7 +6190,7 @@
     (instances
       (project "motorcontrol"
         (path "/c95f7a6e-f487-49bd-bdde-185289dd6bb7"
-          (reference "#PWR010") (unit 1)
+          (reference "#PWR02") (unit 1)
         )
       )
     )
@@ -6199,7 +6199,7 @@
   (symbol (lib_id "power:GND") (at 15.24 186.69 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid f38898ee-15a7-4c7e-b9cb-2d286ca9b025)
-    (property "Reference" "#PWR08" (at 15.24 193.04 0)
+    (property "Reference" "#PWR03" (at 15.24 193.04 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 15.24 191.77 0)
@@ -6215,22 +6215,22 @@
     (instances
       (project "motorcontrol"
         (path "/c95f7a6e-f487-49bd-bdde-185289dd6bb7"
-          (reference "#PWR08") (unit 1)
+          (reference "#PWR03") (unit 1)
         )
       )
     )
   )
 
-  (symbol (lib_id "Diode:1N4001") (at 107.95 64.77 270) (unit 1)
+  (symbol (lib_id "Diode:1N4007") (at 107.95 64.77 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid f40147fb-8161-46c2-8fb7-cd99c7213252)
-    (property "Reference" "D2" (at 110.49 63.5 90)
+    (property "Reference" "D?" (at 110.49 63.5 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "1N4001" (at 110.49 66.04 90)
+    (property "Value" "1N4007" (at 110.49 66.04 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" (at 107.95 64.77 0)
+    (property "Footprint" "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" (at 103.505 64.77 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "http://www.vishay.com/docs/88503/1n4001.pdf" (at 107.95 64.77 0)
@@ -6242,12 +6242,12 @@
     (property "Sim.Pins" "1=K 2=A" (at 107.95 64.77 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 7815af8a-6cbf-44b5-9829-53386f0f3784))
-    (pin "2" (uuid 1b27cc15-5f47-4c11-82e5-46be4d1c39bf))
+    (pin "1" (uuid 205b58be-adb5-4bcf-91c6-88dc9f6eaf5b))
+    (pin "2" (uuid ef0349fb-af7d-48ce-ad69-0f6312f08710))
     (instances
       (project "motorcontrol"
         (path "/c95f7a6e-f487-49bd-bdde-185289dd6bb7"
-          (reference "D2") (unit 1)
+          (reference "D?") (unit 1)
         )
       )
     )
@@ -6256,7 +6256,7 @@
   (symbol (lib_id "Device:C") (at 264.16 87.63 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid f44c8a6c-101f-438b-8edc-758746cd3bcf)
-    (property "Reference" "C28" (at 261.62 91.44 0)
+    (property "Reference" "C30" (at 261.62 91.44 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "C" (at 261.62 93.98 0)
@@ -6273,7 +6273,7 @@
     (instances
       (project "motorcontrol"
         (path "/c95f7a6e-f487-49bd-bdde-185289dd6bb7"
-          (reference "C28") (unit 1)
+          (reference "C30") (unit 1)
         )
       )
     )
@@ -6282,7 +6282,7 @@
   (symbol (lib_id "power:GND") (at 160.02 189.23 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid f4cf0c6f-c1ce-4d06-baee-4da5c706d902)
-    (property "Reference" "#PWR017" (at 160.02 195.58 0)
+    (property "Reference" "#PWR016" (at 160.02 195.58 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 160.02 194.31 0)
@@ -6298,7 +6298,7 @@
     (instances
       (project "motorcontrol"
         (path "/c95f7a6e-f487-49bd-bdde-185289dd6bb7"
-          (reference "#PWR017") (unit 1)
+          (reference "#PWR016") (unit 1)
         )
       )
     )
@@ -6307,13 +6307,13 @@
   (symbol (lib_id "SamacSys_Parts:1EDN7126GXTMA1") (at 205.74 80.01 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid f87edc37-c6ac-4b12-bef9-68d7a5063fdd)
-    (property "Reference" "IC10" (at 224.79 97.79 0)
+    (property "Reference" "IC11" (at 224.79 97.79 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1EDN7126GXTMA1" (at 224.79 74.93 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "1EDN7126GXTMA1" (at 240.03 174.93 0)
+    (property "Footprint" "SamacSys_Parts:1EDN7126GXTMA1" (at 240.03 174.93 0)
       (effects (font (size 1.27 1.27)) (justify left top) hide)
     )
     (property "Datasheet" "https://www.infineon.com/dgdl/Infineon-DS_1EDN71x6G-DataSheet-v02_01-EN.pdf?fileId=8ac78c8c7c9758f2017ca3b96d9b77a6" (at 240.03 274.93 0)
@@ -6348,7 +6348,7 @@
     (instances
       (project "motorcontrol"
         (path "/c95f7a6e-f487-49bd-bdde-185289dd6bb7"
-          (reference "IC10") (unit 1)
+          (reference "IC11") (unit 1)
         )
       )
     )
@@ -6357,7 +6357,7 @@
   (symbol (lib_id "Device:R") (at 199.39 96.52 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid f98fd6dd-68e0-4bc8-82cc-5088d59adbf0)
-    (property "Reference" "R16" (at 194.31 96.52 0)
+    (property "Reference" "R24" (at 194.31 96.52 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "R" (at 195.58 99.06 0)
@@ -6374,7 +6374,7 @@
     (instances
       (project "motorcontrol"
         (path "/c95f7a6e-f487-49bd-bdde-185289dd6bb7"
-          (reference "R16") (unit 1)
+          (reference "R24") (unit 1)
         )
       )
     )
@@ -6383,7 +6383,7 @@
   (symbol (lib_id "Device:C") (at 257.81 142.24 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid fd3302e1-ee8d-49ed-bb36-163c3bc81a9f)
-    (property "Reference" "C27" (at 261.62 140.97 0)
+    (property "Reference" "C29" (at 261.62 140.97 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1 nF" (at 261.62 143.51 0)
@@ -6400,7 +6400,7 @@
     (instances
       (project "motorcontrol"
         (path "/c95f7a6e-f487-49bd-bdde-185289dd6bb7"
-          (reference "C27") (unit 1)
+          (reference "C29") (unit 1)
         )
       )
     )
@@ -6409,7 +6409,7 @@
   (symbol (lib_id "power:GND") (at 257.81 146.05 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid ff612a8a-0184-4ff9-87a0-4668a2414068)
-    (property "Reference" "#PWR021" (at 257.81 152.4 0)
+    (property "Reference" "#PWR024" (at 257.81 152.4 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 257.81 151.13 0)
@@ -6425,7 +6425,7 @@
     (instances
       (project "motorcontrol"
         (path "/c95f7a6e-f487-49bd-bdde-185289dd6bb7"
-          (reference "#PWR021") (unit 1)
+          (reference "#PWR024") (unit 1)
         )
       )
     )
