@@ -1,7 +1,7 @@
 # Motor-Controller-for-cobots
 
 
-## Check out presentation.pdf for complete details
+## Check out presentation.pdf(https://github.com/ChiragKotian/Motor-Controller-for-cobots/blob/main/presentation.pdf) for complete details
 
 
 ## Credits
