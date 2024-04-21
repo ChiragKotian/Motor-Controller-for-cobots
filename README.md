@@ -3,6 +3,8 @@
 
 ## Check out presentation.pdf(https://github.com/ChiragKotian/Motor-Controller-for-cobots/blob/main/presentation.pdf) for complete details
 
+### _NOTE_: The final circuit shown in the schematics doesn't contain any protection for the inductive nature of the motor. Be sure to implement them before using this circuit or else you might end-up damaging your controller. 
+
 
 ## Credits
 
